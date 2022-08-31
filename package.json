@@ -3,12 +3,11 @@
   "version": "2.1.7",
   "description": "Bell Countdown",
   "dependencies": {
-    "react": "^18.0.0",
+    "react": "^18.2.0",
     "react-dom": "^18.0.0",
     "react-circular-progressbar": "hman124/react-circular-progressbar",
     "react-confetti": "^6.1.0",
-    "react-use": "^17.4.0",
-    "react-circular-progressbar": "hman124/react-circular-progressbar"
+    "react-use": "^17.4.0"
   },
   "devDependencies": {
     "vite": "^2.9.9",
