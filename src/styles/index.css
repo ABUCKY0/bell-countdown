@@ -27,7 +27,8 @@ body {
   padding: 0;
   margin: 0;
   font-feature-settings: "tnum";
-  background-color: transparent;
+  background-color: black;
+  color:white;
 }
 
 .container {
@@ -52,7 +53,7 @@ select {
   height: 2rem;
   width: 100vw;
   white-space:nowrap;
-  border-bottom: 1px #444 solid;
+  border-bottom: 1px red solid;
   overflow-x: auto;
   display:flex;
   align-items:center;
@@ -67,11 +68,13 @@ select {
   height: 100%;
   float: left;
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 15px;
   /* border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; */
   -webkit-user-select: none;
   user-select: none;
+  color:red;
+  background-color: #222;
 }
 
 
@@ -80,8 +83,8 @@ select {
 }
 
 .navigation .button.selected {
-  background-color:white;
-  border: 1px #444 solid;
+  background-color: #eeeeee;
+  border: 1px #444444 solid;
   /* border-bottom: none; */
   padding: calc(0.5rem - 1px);
 }

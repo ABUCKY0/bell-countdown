@@ -214,3 +214,6 @@ button {
   display: block;
   margin-right: 0.5rem;
 }
+.button {
+  color:red;
+}

@@ -1,7 +1,10 @@
-if (window.location.protocol === "http:" && window.location.hostname !== "localhost") {
+if (
+  window.location.protocol === "http:" &&
+  window.location.hostname !== "localhost"
+) {
   window.location.protocol = "https:";
 }
-window.onerror=alert;
+window.onerror = alert;
 
 import React from "react";
 import { createRoot } from "react-dom/client";
@@ -12,10 +15,11 @@ import DateCountdown from "./components/DateCountdown.jsx";
 import BellCountdown from "./components/BellCountdown.jsx";
 import LunchMenu from "./components/LunchMenu.jsx";
 import Settings from "./components/Settings.jsx";
+import Announcements from "./components/Announcements.jsx";
 
 import config from "./config.js";
 
-import {Page, Folder, Nav, Button} from "./components/Page.jsx";
+import { Page, Folder, Nav, Button } from "./components/Page.jsx";
 import Confetti from "./components/Confetti.jsx";
 
 window.addEventListener("load", () => {
@@ -31,7 +35,7 @@ class App extends React.Component {
     this.stored = {
       lunch: window.localStorage.getItem("lunch"),
       countdown: window.localStorage.getItem("countdown"),
-      schedule: window.localStorage.getItem("schedule")
+      schedule: window.localStorage.getItem("schedule"),
     };
 
     this.date = new Date();
@@ -40,7 +44,9 @@ class App extends React.Component {
     var alt = config.schedule.alt;
     this.schedule = alt ? alt : today ? today : config.schedule.default;
     console.log(this.schedule);
-    this.lunch = !!this.schedule.lunches.find(x=>x.id == this.stored.lunch) ? this.stored.lunch : false;
+    this.lunch = !!this.schedule.lunches.find((x) => x.id == this.stored.lunch)
+      ? this.stored.lunch
+      : false;
     this.state = {
       lunch: this.lunch,
       ready: !!this.lunch,
@@ -52,7 +58,8 @@ class App extends React.Component {
       menu: {
         loading: true,
         items: null,
-      }, page: "schedule"
+      },
+      page: "schedule",
     };
 
     this.onSelectLunch = this.onSelectLunch.bind(this);
@@ -96,7 +103,7 @@ class App extends React.Component {
   }
 
   setPage(page) {
-    this.setState({page});
+    this.setState({ page });
   }
 
   changeDate(title, date) {
@@ -105,56 +112,56 @@ class App extends React.Component {
     this.setState({ countdown: obj });
   }
 
-//   setSchedule(type, schedule){
-//     this.setState({
-//       scheduleType: type,
-//       schedule: type=="default"?[config.order[this.date.getDay()]]:schedule
-//     });
-    
-//     if(type == "custom"){
-//       window.localStorage.setItem("customSchedule", schedule);
-//     }
-    
-//     window.localStorage.setItem("schedule", type);
-//   }
-  
+  //   setSchedule(type, schedule){
+  //     this.setState({
+  //       scheduleType: type,
+  //       schedule: type=="default"?[config.order[this.date.getDay()]]:schedule
+  //     });
+
+  //     if(type == "custom"){
+  //       window.localStorage.setItem("customSchedule", schedule);
+  //     }
+
+  //     window.localStorage.setItem("schedule", type);
+  //   }
+
   render() {
     return (
       <>
-        
-        {this.state.confetti && <Confetti/>}
-          {!this.state.ready && (
-            <LunchChooser
-              schedule={this.schedule}
-              submit={this.onSelectLunch}
-            />
-          )}
-          {this.state.ready && (<>
-<Folder current={this.state.page}>
-             <Nav set={this.setPage}>
+        {this.state.confetti && <Confetti />}
+        {!this.state.ready && (
+          <LunchChooser schedule={this.schedule} submit={this.onSelectLunch} />
+        )}
+        {this.state.ready && (
+          <>
+            <Folder current={this.state.page}>
+              <Nav set={this.setPage}>
                 <Button page="schedule">Schedule</Button>
                 <Button page="countdown">Countdown</Button>
                 <Button page="menu">Menu</Button>
+                
                 <Button page="settings">Settings</Button>
-                </Nav>
-<Page page="schedule">
+                
+              </Nav>
+              <Page page="schedule">
                 <BellCountdown
                   lunch={this.state.lunch}
                   schedule={this.state.schedule}
                   scheduleType={this.state.scheduleType}
                   display="counters"
                 />
-                </Page>
+              </Page>
 
-                <Page page="countdown">
+              <Page page="countdown">
                 <DateCountdown countdown={this.state.countdown} />
-                </Page>
-                <Page page="menu">
+              </Page>
+              <Page page="menu">
                 <LunchMenu
                   loading={this.state.menu.loading}
                   items={this.state.menu.items}
-                /></Page>
-                <Page page="settings">
+                />
+              </Page>
+              <Page page="settings">
                 <Settings
                   setLunch={this.onSelectLunch}
                   setSchedule={this.setSchedule}
@@ -162,10 +169,14 @@ class App extends React.Component {
                   setTab={(index) => this.setState({ tabIndex: index })}
                   changeDate={this.changeDate}
                 />
-                </Page>
-                </Folder>
-                </>
-           )}
+              </Page>
+              <Page page="announcements">
+                <Announcements/ >
+                
+              </Page>
+            </Folder>
+          </>
+        )}
       </>
     );
   }

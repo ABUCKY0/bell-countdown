@@ -1,7 +1,11 @@
 import React from "react";
 
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+import {
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 /*
 import "/circular_loading_bar/loading.css"
 import "/circular_loading_bar/loading.js"
@@ -182,12 +186,40 @@ class BellCountdown extends React.Component {
               <>
                 <h1>{this.state.countdown.current}</h1>
                 <div className="counters-container">
-                  <div style={{width: this.state.counter, height: this.state.counter}} className="progressbar-container">
-                    <CircularProgressbar value={this.state.countdown.time.minutes} maxValue={this.state.countdown.length} text={this.state.countdown.time.minutes.toString()}/>
+                  <div
+                    style={{
+                      width: this.state.counter,
+                      height: this.state.counter,
+                    }}
+                    className="progressbar-container"
+                  >
+                    <CircularProgressbar
+                      value={this.state.countdown.time.minutes}
+                      maxValue={this.state.countdown.length}
+                      text={this.state.countdown.time.minutes.toString()}
+                      styles={buildStyles({
+                        textColor: "red",
+                        pathColor: "red",
+                      })}
+                    />
                   </div>
-                  <div style={{width: this.state.counter, height: this.state.counter}} className="progressbar-container">
-                    <CircularProgressbar value={this.state.countdown.time.seconds} maxValue={60} text={this.state.countdown.time.seconds.toString()}/>
-                  </div>                  
+                  <div
+                    style={{
+                      width: this.state.counter,
+                      height: this.state.counter,
+                    }}
+                    className="progressbar-container"
+                  >
+                    <CircularProgressbar
+                      value={this.state.countdown.time.seconds}
+                      maxValue={60}
+                      text={this.state.countdown.time.seconds.toString()}
+                      styles={buildStyles({
+                        textColor: "red",
+                        pathColor: "red",
+                      })}
+                    />
+                  </div>
                   <p className="progressbar-label">Minutes</p>
                   <p className="progressbar-label">Seconds</p>
                 </div>

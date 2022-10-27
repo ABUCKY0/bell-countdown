@@ -57,6 +57,7 @@ export default class Settings extends React.Component {
          // <li onClick={() => this.switchPage(4)} >Schedule</li>
     return (
       <ul className="settings-nav">
+        <li onClick={() => this.switchPage(0)}>Settings</li>
         <li onClick={() => this.switchPage(1)}>Lunch</li>
         <li onClick={() => this.switchPage(3)}>Countdown</li>
         {this.props.prompt && (
@@ -119,44 +120,44 @@ export default class Settings extends React.Component {
             />
           </>
         );
-      // case 2:
-      //   return (
-      //     <>
-      //       <h1>Select Background</h1>
-      //       <hr />
-      //       <div className="bg-cont">
-      //         {Array(6)
-      //           .fill(null)
-      //           .reduce((a, e, i) => {
-      //             var url = `/img/${i}.png`;
-      //             a.push(
-      //               <img
-      //                 key={i}
-      //                 className="bg-preview"
-      //                 src={url}
-      //                 onClick={e => this.changeBackground(url)}
-      //               />
-      //             );
-      //             return a;
-      //           }, [])}
-      //       </div>
-      //       <hr />
-      //       <h3>Or upload a file:</h3>
-      //       <input
-      //         type="file"
-      //         value=""
-      //         accept="image/*"
-      //         ref={this.fileInput}
-      //         onChange={this.uploadBackground}
-      //       />
-      //       <input
-      //         type="button"
-      //         onClick={this.changeBackground.bind(this, false)}
-      //         value="Clear Background"
-      //       />
-      //     </>
-      //   );
-      //   break;
+       case 2:
+         return (
+           <>
+             <h1>Select Background</h1>
+             <hr />
+             <div className="bg-cont">
+               {Array(6)
+                 .fill(null)
+                 .reduce((a, e, i) => {
+                   var url = `/img/${i}.png`;
+                   a.push(
+                     <img
+                       key={i}
+                       className="bg-preview"
+                       src={url}
+                       onClick={e => this.changeBackground(url)}
+                     />
+                   );
+                   return a;
+                 }, [])}
+             </div>
+             <hr />
+             <h3>Or upload a file:</h3>
+             <input
+               type="file"
+               value=""
+               accept="image/*"
+               ref={this.fileInput}
+               onChange={this.uploadBackground}
+             />
+             <input
+               type="button"
+               onClick={this.changeBackground.bind(this, false)}
+               value="Clear Background"
+             />
+           </>
+         );
+         break;//*/
       case 3:
         return (
           <>
@@ -254,6 +255,12 @@ export default class Settings extends React.Component {
               Add Period
             </button>
             </div>
+          </>
+          
+        );
+      case 5:
+        return (
+          <>
           </>
         );
       // case 5:
