@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import "../styles/Settings.css";
 export default function LunchChooser(props) {
   var [lunch, setLunch] = useState("choose");
   var [error, setError] = useState(false);
@@ -19,7 +19,7 @@ export default function LunchChooser(props) {
       <option value="choose">Choose One</option>
       {options}
     </select>
-    <input type="button" onClick={submitForm} value="Select"/>
+    <input type="button" onClick={submitForm} value="Select" id="button"/>
     {error && <span style={{color: "red"}}>Please Choose an Option</span>}
   </>
 }
