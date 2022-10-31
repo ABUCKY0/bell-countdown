@@ -198,8 +198,8 @@ class BellCountdown extends React.Component {
                       maxValue={this.state.countdown.length}
                       text={this.state.countdown.time.minutes.toString()}
                       styles={buildStyles({
-                        textColor: "red",
-                        pathColor: "red",
+                        textColor: "black",
+                        pathColor: "black",
                       })}
                     />
                   </div>
@@ -215,8 +215,8 @@ class BellCountdown extends React.Component {
                       maxValue={60}
                       text={this.state.countdown.time.seconds.toString()}
                       styles={buildStyles({
-                        textColor: "red",
-                        pathColor: "red",
+                        textColor: "black",
+                        pathColor: "black",
                       })}
                     />
                   </div>
