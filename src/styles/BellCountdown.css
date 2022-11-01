@@ -7,7 +7,7 @@
 
 .BellCountdown .progressbar-label {
   text-align: center;
-  color: black;
+  color: red;
 }
 
 .BellCountdown .progressbar-container {

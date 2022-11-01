@@ -139,7 +139,7 @@ class App extends React.Component {
                 <Button page="schedule">Schedule</Button>
                 <Button page="countdown">Countdown</Button>
                 <Button page="menu">Menu</Button>
-                <Button page="announcements">Announcements</Button>
+                
                 <Button page="settings">Settings</Button>
                 
               </Nav>
