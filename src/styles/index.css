@@ -27,12 +27,8 @@ body {
   padding: 0;
   margin: 0;
   font-feature-settings: "tnum";
-  background-image: url("https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/FAF12C22-8F80-4E3D-8838-BDB9CE8021F3.jpeg?v=1667225217151");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  background-size: cover;
-  color:black;
+  background-color: black;
+  color:white;
 }
 
 .container {
@@ -57,7 +53,7 @@ select {
   height: 2rem;
   width: 100vw;
   white-space:nowrap;
-  border-bottom: 1px black solid;
+  border-bottom: 1px red solid;
   overflow-x: auto;
   display:flex;
   align-items:center;
@@ -77,8 +73,8 @@ select {
   border-bottom-right-radius: 0; */
   -webkit-user-select: none;
   user-select: none;
-  color:black;
-  background-color: #22222233;
+  color:red;
+  background-color: #222;
 }
 
 
@@ -87,7 +83,7 @@ select {
 }
 
 .navigation .button.selected {
-  background-color: #eeeeee22;
+  background-color: #eeeeee;
   border: 1px #444444 solid;
   /* border-bottom: none; */
   padding: calc(0.5rem - 1px);
