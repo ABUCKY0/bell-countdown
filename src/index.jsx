@@ -65,6 +65,7 @@ class App extends React.Component {
     this.onSelectLunch = this.onSelectLunch.bind(this);
     this.changeDate = this.changeDate.bind(this);
     this.setPage = this.setPage.bind(this);
+    this.showannt = config.schedule.showAnnouncements;
   }
 
   componentDidMount() {
@@ -111,7 +112,12 @@ class App extends React.Component {
     window.localStorage.setItem("countdown", JSON.stringify(obj));
     this.setState({ countdown: obj });
   }
-
+  /*showann(showannt) {
+    if (showannt == true) {
+      return( { <> <Page page="announcements" hidden>
+          </Announcements> </>}) 
+    }
+  }*/
   //   setSchedule(type, schedule){
   //     this.setState({
   //       scheduleType: type,
@@ -170,10 +176,13 @@ class App extends React.Component {
                   changeDate={this.changeDate}
                 />
               </Page>
-              <Page page="announcements">
+              
+    <Page page="announcements" hidden>
                 <Announcements/ >
-                
+                <Button page="announcements" style="display:none;" hidden>Announcements</Button>
               </Page>
+
+           
             </Folder>
           </>
         )}

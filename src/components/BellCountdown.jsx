@@ -179,7 +179,7 @@ class BellCountdown extends React.Component {
   render() {
     return (
       <div className="BellCountdown container">
-        <h1>{this.state.clock}</h1>
+        <h1 class="clock">{this.state.clock}</h1>
         {this.state.countdown.school && (
           <>
             {this.props.display == "counters" && (

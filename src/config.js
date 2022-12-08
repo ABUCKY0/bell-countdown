@@ -1,6 +1,8 @@
 import normal from "./schedules/normal.js";
 import peprally from "./schedules/peprally.js";
-import extended2nd from "./schedules/extended2nd.js"
+import extended2nd from "./schedules/extended2nd.js";
+import finals from "./schedules/finalsTwoFinals.js";
+import oneFinals from "./schedules/finalsWeekOnlyOne.js";
 
 const config = {
     schedule: {
@@ -9,7 +11,8 @@ const config = {
         default: normal,
         order: [null, normal, normal, extended2nd, normal, normal],
         //alt schedule - if this is set, it will override the daily order.
-        alt: null
+        alt: null,
+        showAnnoucements: false
     }
 }
 
