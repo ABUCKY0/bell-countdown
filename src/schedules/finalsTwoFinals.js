@@ -32,10 +32,10 @@ export default {
     };
 
     return [
-      { name: "First Exam (1st Period)", time: ["07:15", "08:45"] },
-      { name: "Second Exam (6th Period)", time: ["08:51", "10:19"] },
+      { name: "First Exam", time: ["07:15", "08:45"] },
+      { name: "Second Exam", time: ["08:51", "10:19"] },
       ...lunches[l],
-      { name: "Last Period of The Day (7th Period)", time: ["13:18", "14:40"] }
+      { name: "3rd Period", time: ["13:18", "14:40"] }
     ];
   }
 };
