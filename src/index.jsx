@@ -16,6 +16,7 @@ import BellCountdown from "./components/BellCountdown.jsx";
 import LunchMenu from "./components/LunchMenu.jsx";
 import Settings from "./components/Settings.jsx";
 import Announcements from "./components/Announcements.jsx";
+import Bell from "./components/bellimage.jsx";
 
 import config from "./config.js";
 
@@ -73,20 +74,21 @@ class App extends React.Component {
       e.preventDefault();
       this.setState({ prompt: true });
     });
+    
+/*
+     const d = new Date();
+     const today = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
 
-    // const d = new Date();
-    // const today = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
+     const options = new URLSearchParams();
+     options.set("date", today);
 
-    // const options = new URLSearchParams();
-    // options.set("date", today);
-
-    // fetch(
-    //   "https://bell-countdown-api.glitch.me/MenuItems?" + options.toString()
-    // )
-    //   .then((r) => r.json())
-    //   .then((items) => {
-    //     this.setState({ menu: { loading: false, items } });
-    //   });
+     fetch(
+       "https://bell-countdown-api.glitch.me/MenuItems?" + options.toString()
+     )
+       .then((r) => r.json())
+       .then((items) => {
+         this.setState({ menu: { loading: false, items } });
+       });*/
 
     window.addEventListener("appinstalled", () => {
       this.setState({ prompt: true });
@@ -144,8 +146,8 @@ class App extends React.Component {
               <Nav set={this.setPage}>
                 <Button page="schedule">Schedule</Button>
                 <Button page="countdown">Countdown</Button>
-                <Button page="menu">Menu</Button>
                 
+                <Button page="announcements">Announcements</Button>
                 <Button page="settings">Settings</Button>
                 
               </Nav>
@@ -162,6 +164,7 @@ class App extends React.Component {
                 <DateCountdown countdown={this.state.countdown} />
               </Page>
               <Page page="menu">
+                <Button page="menu">Menu</Button>
                 <LunchMenu
                   loading={this.state.menu.loading}
                   items={this.state.menu.items}
@@ -174,15 +177,18 @@ class App extends React.Component {
                   schedule={this.schedule}
                   setTab={(index) => this.setState({ tabIndex: index })}
                   changeDate={this.changeDate}
+                  
                 />
               </Page>
               
     <Page page="announcements" hidden>
                 <Announcements/ >
-                <Button page="announcements" style="display:none;" hidden>Announcements</Button>
+                
               </Page>
 
-           
+      <Page page="bell"> 
+        <Bell/>
+      </Page>
             </Folder>
           </>
         )}
