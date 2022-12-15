@@ -345,10 +345,10 @@ export default class Settings extends React.Component {
         <div style={{ clear: "both" }}></div>
         <div className="settings-page">{this.renderPage()}</div>
         <span className="version">
-          Ver. 2.1.13 (quickfix) |{" "}
-          {/*version number last updated on 08/30/22*/}
-          <a href="https://github.com/hman124/bell-countdown/issues/new">Report Bugs</a> |{" "}
-          <a href="https://github.com/hman124/bell-countdown">Github</a>
+          Ver. 2.2.1 (Fresh New Content) |{" "}
+          {/*version number last updated on 12/15/22*/}
+          <a href="https://github.com/ABUCKY0/bell-countdown/issues/new">Report Bugs</a> |{" "}
+          <a href="https://github.com/ABUCKY0/bell-countdown">Github</a>
           
         </span>
       </div>

@@ -47,7 +47,7 @@ class BellCountdown extends React.Component {
     const pattern = /[0-9]{1,2}:[0-9]{1,2}/;
     if (pattern.test(time)) {
       const [hours, minutes] = time.split(":");
-      return +minutes + +hours * 60;
+      return +minutes + (+hours * 60);
     } else {
       return 0;
     }
@@ -216,7 +216,7 @@ class BellCountdown extends React.Component {
                       text={this.state.countdown.time.seconds.toString()}
                       styles={buildStyles({
                         textColor: "red",
-                        pathColor: "red",
+                        pathColor: "red", //right here is how I changed the circular progress bar colors previously, and also in the css
                       })}
                     />
                   </div>
@@ -235,6 +235,8 @@ class BellCountdown extends React.Component {
             <h1>No School Right Now</h1>
             <p>{this.state.countdown.reason}</p>
             <p>{this.props.lunch} Lunch</p>
+            <a href="https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/schedule.png?v=1670865940572" style={{"color": "darkgreen"}}>View the Bell Schedule For Finals Week</a>
+
           </>
         )}
       </div>
