@@ -5,7 +5,7 @@
 }
 
 div.announcements {
-  background-color: #90ee9077;
+  background-color: #222222;
   box-sizing: border-box;
   font-family: sans-serif;
   margin: 3vh;
@@ -14,7 +14,7 @@ div.announcements {
   border-radius: 10px;
   min-width: 96vw;
 
-  color: darkgreen;
+  color: red;
 }
 /*
       .announcements {
@@ -43,11 +43,12 @@ div.announcements {
   padding: 0.2rem;
   margin: 2px;
   place-items: left;
-  border: 2px lightgray solid;
+  /*border: 2px white solid;*/
   border-radius: 2rem;
-  background-color: #ff000077;
+  background-color: #333333;
+  font-weight:bold;
   height: 2rem;
   font-size: 1rem;
-  color: white;
+  color: red;
 }
 /*d*/
