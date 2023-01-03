@@ -9,7 +9,7 @@ const config = {
         //default schedule - schedule used most often. User will be
         //notified if today's schedule is not the default.
         default: normal,
-        order: [null, normal, finals, finals, finals, oneFinals],
+        order: [null, normal, normal, normal, normal, normal],
         //alt schedule - if this is set, it will override the daily order.
         alt: null,
         showAnnoucements: false
