@@ -228,8 +228,7 @@ class BellCountdown extends React.Component {
             <p>Ends At {this.to12hrTime(this.state.countdown.end)}</p>
             <p>Next Period: {this.state.countdown.next}</p>
             <p>{this.props.lunch} Lunch</p>
-            
-            <a href="https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/schedule.png?v=1670865940572" style={{"color": "darkgreen"}}>View the Bell Schedule For Finals Week</a>
+              
           </>
         )}
         {!this.state.countdown.school && (
@@ -237,7 +236,7 @@ class BellCountdown extends React.Component {
             <h1>No School Right Now</h1>
             <p>{this.state.countdown.reason}</p>
             <p>{this.props.lunch} Lunch</p>
-            <a href="https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/schedule.png?v=1670865940572" style={{"color": "darkgreen"}}>View the Bell Schedule For Finals Week</a>
+            
 
           </>
         )}
