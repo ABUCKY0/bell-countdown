@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Settings.css";
 import config from "../config.js";
 
-const serverURL = "https://node-js-api.glitch.me/";
+const serverURL = "https://lc-bell-schedule-api.glitch.me/";
 
 // import calendar from "../icalfeed.json"
 import "../styles/DateCountdown.css";
