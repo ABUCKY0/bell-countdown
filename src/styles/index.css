@@ -5,7 +5,9 @@
 
 * {
   box-sizing: border-box;
-  --color: darkgreen;
+  --main-color: red;
+  --alt-color: red;
+  --background-color: black;
 }
 
 :root {
@@ -28,12 +30,13 @@ body {
   padding: 0;
   margin: 0;
   font-feature-settings: "tnum";
-  background-image: url("https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/pexels-george-dolgikh-1303094.jpg?v=1670440708322");
+ /* background-image: url("https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/pexels-george-dolgikh-1303094.jpg?v=1670440708322");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
-  background-size: cover;
-  color: var(--color);
+  background-size: cover;*/
+  background-color:var(--background-color);
+  color: var(--main-color);
 }
 
 .container {
@@ -58,7 +61,7 @@ select {
   height: 2rem;
   width: 100vw;
   white-space:nowrap;
-  border-bottom: 1px var(--color) solid;
+  border-bottom: 1px var(--main-color) solid;
   overflow-x: auto;
   display:flex;
   align-items:center;
@@ -78,8 +81,8 @@ select {
   border-bottom-right-radius: 0; */
   -webkit-user-select: none;
   user-select: none;
-  color:var(--color);
-  background-color:#90EE9077; /*#222*/
+  color:var(--main-color);
+  background-color:#222222; /*#222*/
 }
 
 
@@ -88,9 +91,9 @@ select {
 }
 
 .navigation .button.selected {
-  background-color: #aa0000aa; /*#eeeeee*/
+  background-color: #eeeeee; /*#eeeeee*/
   border: 1px #444444 solid;
-  color:white;
+  color: var(--main-color);
   /* border-bottom: none; */
   padding: calc(0.5rem - 1px);
 }
