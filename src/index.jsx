@@ -28,7 +28,26 @@ window.addEventListener("load", () => {
     navigator.serviceWorker.register("/sw.js", { scope: "/" });
   }
 });
-
+fetch(`https://lc-bell-schedule-api.glitch.me/api/config.js`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json" 
+    }
+  }).then(response => response.json()) // Parse the response as text
+  .then(js => {
+    //json is a json object of the response
+    
+    if(!js.success){console.error(js.message);}
+    
+    config = js;
+    
+  }).catch(err => {
+    //using .catch like this will catch the error if the response isn't json 
+    //can we make a log file to log everything to or will that require some more node packages? 
+    //since this is all on the client side, we would need a server to send the logs to, but on the server, we can do that. we could make something in the api and our database, 
+    //but that would be alot of logging during debugging, unless we check to see if window.location == lc-bell-countdown.glitch.me normally, you don't need permanent logs on the client side, just fix the error when youre in development || true
+    console.error(err);
+  });
 class App extends React.Component {
   constructor(props) {
     super(props);
