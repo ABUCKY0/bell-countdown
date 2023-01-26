@@ -7,7 +7,8 @@
     "react-dom": "^18.2.0",
     "react-circular-progressbar": "hman124/react-circular-progressbar",
     "react-confetti": "^6.1.0",
-    "react-use": "^17.4.0"
+    "react-use": "^17.4.0",
+    "newrelic": "^9.8.1"
   },
   "devDependencies": {
     "vite": "^2.9.9",
