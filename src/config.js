@@ -9,9 +9,9 @@ const config = {
         //default schedule - schedule used most often. User will be
         //notified if today's schedule is not the default.
         default: normal,
-        order: [null, normal, normal, normal, extended2nd, extended2nd],
+        order: [null, normal, normal, normal, normal, normal],
         //alt schedule - if this is set, it will override the daily order.
-        alt: null,
+        alt: extended2nd,
         showAnnoucements: false
     }
 }
