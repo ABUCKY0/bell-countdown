@@ -1,5 +1,5 @@
 export default {
-  title: "Normal",
+  title: "Pep Rally",
   version: "2.1",
   lunches: [
     {id: "A", name: "A Lunch"},

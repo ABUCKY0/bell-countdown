@@ -1,5 +1,5 @@
 export default {
-  title: "Normal",
+  title: "Pack Period",
   version: "2.1",
   lunches: [
     {id: "A", name: "A Lunch"},
