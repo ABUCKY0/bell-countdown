@@ -4,7 +4,7 @@ import extended2nd from "./schedules/extended2nd.js";
 import finals from "./schedules/finalsTwoFinals.js";
 import oneFinals from "./schedules/finalsWeekOnlyOne.js";
 import unknown from "./schedules/unknown.js";
-
+import SAT from "./schedules/SAT.js";
 const config = {
     schedule: {
         //default schedule - schedule used most often. User will be
@@ -12,7 +12,7 @@ const config = {
         default: normal,
         order: [null, normal, normal, normal, normal, normal],
         //alt schedule - if this is set, it will override the daily order.
-        alt: unknown,
+        alt: SAT,
         showAnnoucements: false
     }
 }
