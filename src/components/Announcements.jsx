@@ -33,7 +33,7 @@ retrievedata() {
   
   //here it is https://support.glitch.com/t/opt-out-of-waking-up-interstitial/8789
   //just add a content-type header, and glitch will just load and wont send the html loading screen
-  fetch(`${serverURL}/api/announcements`, {
+  fetch("https://bell-schedule-api.cyclic.app/api/announcements", {
     method: "GET",
     headers: {
       "Content-Type": "application/json" 
