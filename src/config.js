@@ -5,7 +5,7 @@ import finals from "./schedules/finalsTwoFinals.js";
 import oneFinals from "./schedules/finalsWeekOnlyOne.js";
 import unknown from "./schedules/unknown.js";
 import SAT from "./schedules/SAT.js";
-import EOC from "./schedules/EOC.js";
+import EOC from "./schedules/eoc.js";
 const config = {
     schedule: {
         //default schedule - schedule used most often. User will be
