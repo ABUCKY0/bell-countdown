@@ -200,7 +200,7 @@ class App extends React.Component {
                   
                 />
               </Page>
-                    <Page page="bellschedule"><iframe src="https://bit.ly/3AaopdU" style={{ height:"95vh", width:"100%", margin:"0", border:"0", display:"block" }}></iframe> </Page>
+                    <Page page="bellschedule"><iframe src="https://drive.google.com/file/d/1l2a5K4aW6r43224pAXtk6uirjbs4HKG1/view?&embedded=true" style={{ height:"95vh", width:"100%", margin:"0", border:"0", display:"block" }}></iframe> </Page>
     <Page page="announcements" hidden>
                 <Announcements/ >
                 
