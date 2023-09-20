@@ -167,7 +167,6 @@ class App extends React.Component {
                 <Button page="schedule">Schedule</Button>
                 <Button page="countdown">Countdown</Button>
                 <Button page="bellschedule">Bell Schedule</Button>
-                <Button page="announcements">Announcements</Button>
                 <Button page="settings">Settings</Button>
                 
               </Nav>
@@ -204,7 +203,7 @@ class App extends React.Component {
     <Page page="announcements" hidden>
                 <Announcements/ >
                 
-              </Page>
+        </Page>
 
       <Page page="bell"> 
         <Bell/>
