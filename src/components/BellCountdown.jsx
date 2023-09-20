@@ -228,7 +228,7 @@ class BellCountdown extends React.Component {
             <p>Ends At {this.to12hrTime(this.state.countdown.end)}</p>
             <p>Next Period: {this.state.countdown.next}</p>
             <p>{this.props.lunch} Lunch</p>
-              
+            <p style={{color:"gray"}}><a style={{fontWeight: "950"}}>{this.props.schedule.title}</a> Schedule</p>
           </>
         )}
         {!this.state.countdown.school && (
@@ -236,7 +236,6 @@ class BellCountdown extends React.Component {
             <h1>No School Right Now</h1>
             <p>{this.state.countdown.reason}</p>
             <p>{this.props.lunch} Lunch</p>
-            
 
           </>
         )}
