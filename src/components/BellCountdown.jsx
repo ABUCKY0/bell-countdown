@@ -179,7 +179,7 @@ class BellCountdown extends React.Component {
   render() {
     return (
       <div className="BellCountdown container">
-        <h1 class="clock">{this.state.clock}</h1>
+        <h1 class="clock" style={{fontWeight: "950"}}> {this.state.clock}</h1>
         {this.state.countdown.school && (
           <>
             {this.props.display == "counters" && (
@@ -225,9 +225,9 @@ class BellCountdown extends React.Component {
                 </div>
               </>
             )}
-            <p>Ends At {this.to12hrTime(this.state.countdown.end)}</p>
-            <p>Next Period: {this.state.countdown.next}</p>
-            <p>{this.props.lunch} Lunch</p>
+            <p>Ends At <a style={{fontWeight: "950"}}>{this.to12hrTime(this.state.countdown.end)}</a></p>
+            <p>Next Period: <a style={{fontWeight: "950"}}>{this.state.countdown.next}</a></p>
+            <p style={{fontWeight: "950"}}>{this.props.lunch} Lunch</p>
             <p style={{color:"gray"}}><a style={{fontWeight: "950"}}>{this.props.schedule.title}</a> Schedule</p>
           </>
         )}

@@ -15,7 +15,8 @@ const config = {
         //alt schedule - if this is set, it will override the daily order.
         alt: null,
         showAnnoucements: true
-    }
+    },
+    version: " v2.2.1"
 }
 
 export default config;
