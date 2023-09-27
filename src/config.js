@@ -9,11 +9,11 @@ import EOC from "./schedules/eoc.js";
 const config = {
     schedule: {
         //default schedule - schedule used most often. User will be
-        //notified if today's schedule is not the default.
+        //notified if .today's schedule is not the default.
         default: normal,
         order: [null, normal, normal, normal, normal, normal],
         //alt schedule - if this is set, it will override the daily order.
-        alt: null,
+        alt: pack,
         showAnnoucements: true
     },
     version: " v2.2.1"
