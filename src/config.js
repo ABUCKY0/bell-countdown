@@ -13,7 +13,7 @@ const config = {
         default: normal,
         order: [null, normal, normal, normal, normal, normal],
         //alt schedule - if this is set, it will override the daily order.
-        alt: pack,
+        alt: null,
         showAnnoucements: true
     },
     version: " v2.2.1"
