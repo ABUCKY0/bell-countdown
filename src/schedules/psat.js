@@ -21,9 +21,9 @@ export default {
         ],
         C: [
           { name: "4th Period", time: ["11:06", "11:36"] },
-          { name: "5th Period (Part 1)", time: ["11:42", "12:12"] },
+          { name: "5th Period", time: ["11:42", "12:12"] },
           { name: "Lunch", time: ["12:12", "12:42"] },
-          { name: "5th Period (Part 2)", time: ["12:48", "13:18"]}
+          { name: "5th Period", time: ["12:48", "13:18"]}
         ],
         D: [
           { name: "4th Period", time: ["11:06", "11:36"] },
