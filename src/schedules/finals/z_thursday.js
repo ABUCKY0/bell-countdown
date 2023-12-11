@@ -32,12 +32,11 @@ export default {
     };
 
     return [
-      { name: "First Exam (1st Period)", time: ["07:15", "08:45"] },
+      { name: "Fifth Period Exam (1st Period)", time: ["07:15", "08:45"] },
       { name: "3rd Period", time: ["08:51", "10:07"] },
       ...lunches[l],
-      { name: "6th Period (One More Class Left)", time: ["13:01", "13:47"] },
-      { name: "7th Period (Final Class before the Break!! Have an amazing Holiday Break!)", time: ["13:53", "14:40"] },
-      { name: "SCHOOLS OUT!!! HAVE AN AMAZING HOLIDAY BREAK!! -- Aaron", time: ["14:40", "15:00"] }
+      { name: "6th Period", time: ["13:01", "13:47"] },
+      { name: "7th Period", time: ["13:53", "14:40"] }
     ];
   }
 };

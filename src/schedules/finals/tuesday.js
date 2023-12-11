@@ -32,8 +32,8 @@ export default {
     };
 
     return [
-      { name: "First Exam", time: ["07:15", "08:45"] },
-      { name: "Second Exam", time: ["08:51", "10:19"] },
+      { name: "Second Period Exam", time: ["07:15", "08:45"] },
+      { name: "Seventh Period Exam", time: ["08:51", "10:19"] },
       ...lunches[l],
       { name: "3rd Period", time: ["13:18", "14:40"] }
     ];
