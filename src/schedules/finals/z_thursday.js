@@ -1,5 +1,5 @@
 export default {
-  title: "Finals Week -- One Final Today",
+  title: "Finals Week -- 5th Period Final",
   version: "2.1",
   lunches: [
     {id: "A", name: "A Lunch"},
