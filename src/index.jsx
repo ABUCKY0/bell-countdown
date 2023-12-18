@@ -202,8 +202,7 @@ class App extends React.Component {
                     <Page page="bellschedule">
                       
                       <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://drive.google.com/uc?export=download&id=1eCBjDyoxIbp2_YEbv3gm4Xet5Ne9uVTg" style={{ height:"95vh", width:"100%", margin:"0", border:"0", display:"block" }}></iframe>
-                                <p>An issue occured when attempting to show the pdf of the schedule. Sorry about that. </p>
-                      </object>
+                    
 
                     
                     </Page>
