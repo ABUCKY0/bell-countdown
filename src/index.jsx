@@ -201,7 +201,7 @@ class App extends React.Component {
               </Page>
                     <Page page="bellschedule">
                       
-                      <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://drive.google.com/uc?export=download&id=1eCBjDyoxIbp2_YEbv3gm4Xet5Ne9uVTg" style={{ height:"95vh", width:"100%", margin:"0", border:"0", display:"block" }}></iframe>
+                      <iframe src="https://docs.google.com/viewer?url=https://drive.google.com/uc?export=download&id=1eCBjDyoxIbp2_YEbv3gm4Xet5Ne9uVTg" style={{ height:"95vh", width:"100%", margin:"0", border:"0", display:"block" }}></iframe>
                     
 
                     
