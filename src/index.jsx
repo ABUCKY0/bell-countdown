@@ -201,7 +201,7 @@ class App extends React.Component {
               </Page>
                     <Page page="bellschedule">
                       
-                      <object width="100%" height="95vw" type="application/pdf" data="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://drive.google.com/uc?export=download&id=1eCBjDyoxIbp2_YEbv3gm4Xet5Ne9uVTg">
+                      <object height="95vh" width="100%" margin="0" border="0" display="block" type="application/pdf" data="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://drive.google.com/uc?export=download&id=1eCBjDyoxIbp2_YEbv3gm4Xet5Ne9uVTg">
                                 <p>An issue occured when attempting to show the pdf of the schedule. Sorry about that. </p>
                       </object>
 
