@@ -199,7 +199,14 @@ class App extends React.Component {
                   
                 />
               </Page>
-                    <Page page="bellschedule"><iframe src="https://docs.google.com/viewer?url=https://cdn.glitch.com/114ed44c-2e7f-4aea-b252-9d262062a66b/ACFrOgB5eOLpKNm29JCuh5jJAZil6mEGvKlBlDSp0oIyV0tdHrsxq54eLPXLNpAI3eIbM9tIbAZjOeAroHL_KF-01o_JlstFEVbmi9am8RFWybX0UToM2F_wSzh7-NbL3PACpdi4cU4On3ycn-4t.pdf?v=1672761551853&embedded=true" style={{ height:"95vh", width:"100%", margin:"0", border:"0", display:"block" }}></iframe> </Page>
+                    <Page page="bellschedule">
+                      
+                      <object width="400" height="500" type="application/pdf" data="https://d399t9aybl32nm.cloudfront.net/c56816da-fc45-4f51-9d9d-d4e6d963cd6d/Fall%202023%20Exam%20Schedule.pdf?Expires=1710633600&Signature=cNfrvz0VJn9o~WnCF2C4PrIqR5p4jgL1IJUPTnH97YVSDiPSGqWl4w3h5V7V-ktd8EfQHgm2gz8Fi~NoIfhAipdbfz~rVbbHAVBsQk-NIt6DRf4gPaaOKAVo9BuIGkg8Tlh4l2Rn9yycluiCopFsaagBFhdLrGdTmPGfXzUOfwUIndqnFK9v84uDrJEUpHSPTo3-NBvuzJeDQ4NjoKoh5hMmZlpiDvBImzJ9n6hAdnlqO6fUvoaIiL91ibqSqWNtDv7njPJMtkSaTWJFQd8kZ~vqh1XK2DO-6FujwKwsrA7DwKPqzsXqZxWKDr3G3q7UQ~pFHwu3Ztaba6qt3ofDIg__&Key-Pair-Id=APKAIYBEA2OWI77AFPYQ">
+                                <p>An issue occured when attempting to show the pdf of the schedule. Sorry about that. </p>
+                      </object>
+
+                    
+                    </Page>
     <Page page="announcements" hidden>
                 <Announcements/ >
                 
