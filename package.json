@@ -10,7 +10,7 @@
     "react-use": "^17.4.2"
   },
   "devDependencies": {
-    "vite": "^5.0.10",
+    "vite": "^5.0.12",
     "@vitejs/plugin-react": "^4.2.1"
   },
   "scripts": {
